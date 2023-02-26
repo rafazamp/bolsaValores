@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Negociação Bolsa de Valores</title>
+  <script src="./js/main/app.js" type="module" defer></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Bolsa de Valores</h1>
+  <div class="operar">
+    <form class="form">
+      <h2>Operar na Bolsa</h2>
+      <label for="dataNegociacao">Data da Negociação:</label>
+      <input type="date" name="dataNegociacao" id="dataNegociacao" required>
+      <br><br>
+      <label for="quantidadeAcoesVendidas">Quantidade de Ações Vendidas:</label>
+      <input type="number" name="quantidadeAcoesVendidas" id="quantidadeAcoesVendidas" min="1" max="100" required>
+      <br><br>
+      <label for="valorNegociacao">Valor da Negociação:</label>
+      <input type="number" name="valorNegociacao" id="valorNegociacao" step=".1" min="0.0" max="1000000.0" required>
+      <br><br>
+      <button>Operar Ações</button>
+    </form>
+  </div>
+  <div class="operacoesRealizadas">
+    <h2>Operações Realizadas</h2>
+    <table id="tabelaOperacoes">
+      <thead>
+        <th>Data da Negociação</th>
+        <th>Quantidade de Ações Vendidas</th>
+        <th>Valor da Negociação</th>
+      </thead>
+      <tbody class="corpoTabela">
+
+      </tbody>
+    </table>
+  </div>
+  <div class="filtroOperacoes">
+    <h2>Filtro de Negociações</h2>
+    <input type="number" id="inputFiltroOperacoes" placeholder="Digite o valor da negociação..." title="Digite o valor da negociação" min="0.0" max="1000000.0">
+  </div>
+</body>
+</html>

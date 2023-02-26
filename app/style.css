@@ -1,0 +1,35 @@
+h1 {
+  text-align: center;
+  align-items : center;
+}
+
+.operar {
+  background-color: #eeeeee;
+  text-align: center;
+  align-items : center;
+  border: 3px solid black;
+  border-radius: 10px;
+  height: auto;
+  width : auto;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+
+.operacoesRealizadas, .filtroOperacoes {
+  margin-top: 25px;
+  background-color: #eeeeee;
+  text-align: center;
+  align-items : center;
+  border: 3px solid black;
+  border-radius: 10px;
+  height: auto;
+  width : auto;
+  flex-direction: column;  
+  padding-bottom: 20px;
+}
+
+#inputFiltroOperacoes  {
+  width: 60%;
+}
+
+
